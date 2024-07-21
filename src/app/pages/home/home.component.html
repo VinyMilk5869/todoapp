@@ -1,64 +1,127 @@
-<section class="todoapp">
-    <header class="header">
-      <div class="container">
-        <h1>My Day</h1>
-        <p>All my tasks in one place</p>
-        <input
-          class="new-todo"
-          placeholder="Type new todo"
-          autofocus
-          type="text"
-        />
-      </div>
-    </header>
-    <div class="container todoapp-wrapper">
-      <!-- This section should be hidden by default and shown when there are todos -->
-      <section class="main">
-        <ul class="todo-list">
-          <li class="completed">
-            <div class="view">
-              <input class="toggle" type="checkbox" checked />
-              <label>Learn JavaScript</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Learn JavaScript" />
-          </li>
-          <li>
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Buy a unicorn</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Buy a unicorn" />
-          </li>
-          <li class="editing">
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Make dishes</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Make dishes" />
-          </li>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPS Sura</title>
+    <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>LOGO + NOMBRE</h1>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios-en-linea">Servicios en Línea</a></li>
+            <li><a href="#bienestar">Bienestar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#noticias">Noticias</a></li>
         </ul>
-      </section>
-      <!-- This footer should be hidden by default and shown when there are todos -->
-      <footer class="footer">
-        <!-- This should be `0 items left` by default -->
-        <span class="todo-count"><strong>0</strong> item left</span>
-        <!-- Remove this if you don't implement routing -->
-        <ul class="filters">
-          <li>
-            <a routerLink="/" class="selected">All</a>
-          </li>
-          <li>
-            <a routerLink="/pending">Pending</a>
-          </li>
-          <li>
-            <a routerLink="/completed">Completed</a>
-          </li>
+    </nav>
+</header>
+
+<main>
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Esta es una página web de *****. La página ofrece información sobre los servicios de la compañía, incluyendo afiliación, trámites, y programas de salud.</p>
+    </section>
+
+    <section id="servicios-en-linea">
+        <h2>Servicios en línea</h2>
+        <p>La página ofrece una variedad de servicios en línea para afiliados, incluyendo:</p>
+        <ul>
+            <li>Solicitud de citas médicas</li>
+            <li>Solicitud de medicamentos</li>
+            <li>Información sobre afiliaciones</li>
         </ul>
-        <!-- Hidden if no completed items are left ↓ -->
-        <button class="clear-completed">Clear completed</button>
-      </footer>
-    </div>
-  </section>
+    </section>
+
+    <section id="bienestar">
+        <h2>Contenidos para tu bienestar</h2>
+        <p>La página también ofrece una variedad de contenidos para el bienestar de los afiliados, incluyendo:</p>
+        <ul>
+            <li>Artículos sobre salud</li>
+            <li>Foros virtuales con expertos</li>
+            <li>Podcasts sobre salud</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Canales de contacto</h2>
+        <p>La página ofrece una variedad de canales de contacto para los afiliados, incluyendo:</p>
+        <ul>
+            <li>Chatea con Tibot</li>
+            <li>Preguntas frecuentes</li>
+            <li>Líneas de atención</li>
+            <li>Escríbenos tus PQRS</li>
+            <li>Puntos de atención</li>
+        </ul>
+    </section>
+
+    <section id="enlaces">
+        <h2>Enlaces de interés</h2>
+        <p>La página ofrece una variedad de enlaces de interés para los afiliados, incluyendo:</p>
+        <ul>
+            <li>Dónde recibir atención virtual en salud</li>
+            <li>Todo sobre medicamentos</li>
+            <li>Autorizaciones</li>
+            <li>Transcripción de incapacidades</li>
+            <li>Plan de educación para clientes</li>
+        </ul>
+    </section>
+
+    <section id="noticias">
+        <h2>Noticias</h2>
+        <p>La página ofrece noticias sobre los últimos acontecimientos, incluyendo:</p>
+        <ul>
+            <li>EPS SURA pide autorización a la Superintendencia Nacional de Salud para su salida progresiva del Sistema de Seguridad Social.</li>
+            <li>Agéndate para la audiencia pública de Rendición de Cuentas el martes 20 de junio desde las 8:30 a. m.</li>
+        </ul>
+    </section>
+
+    <section id="sobre-nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>La página ofrece información sobre EPS Sura, incluyendo:</p>
+        <ul>
+            <li>Estados financieros</li>
+            <li>Normatividad</li>
+            <li>Nuestras oficinas</li>
+            <li>Trabaje con nosotros</li>
+            <li>Consulta de oportunidad</li>
+            <li>Indicadores de Salud</li>
+            <li>Línea ética</li>
+            <li>Participación ciudadana</li>
+            <li>Rendición de cuentas</li>
+        </ul>
+    </section>
+
+    <section id="reguladoras">
+        <h2>Entidades reguladoras</h2>
+        <p>La página ofrece información sobre las entidades reguladoras a las que pueden acudir los usuarios si consideran incumplido el Plan de Beneficios y no obtengan respuesta a través de los canales de contacto dispuestos por la EPS.</p>
+    </section>
+
+    <section id="atencion">
+        <h2>Líneas de atención</h2>
+        <p>La página ofrece las líneas de atención</p>
+    </section>
+
+    <section id="otros-sitios">
+        <h2>Otros sitios</h2>
+        <p>La página ofrece enlaces a otros sitios web del Grupo SURA, incluyendo:</p>
+        <ul>
+            <li><a href="#">SURA</a></li>
+            <li><a href="#">SURA AMERICANA</a></li>
+            <li><a href="#">ARL SURA</a></li>
+            <li><a href="#">SEGUROS SURA</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 EPS Sura. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
